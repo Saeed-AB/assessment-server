@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: my-simple-app
+    runtime: node
+    buildCommand: yarn install
+    startCommand: yarn start
+    env: node
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+    plan: free
